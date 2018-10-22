@@ -1,7 +1,7 @@
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Tahoma, sans-serif;
   background-color: white;
 }
 
@@ -17,10 +17,20 @@ a {
 
 
 #nav-listing li:hover{
-  background-color: darkgray;
+  background-color: #ff9685;
 }
+
+#nav-listing > :first-child{
+  border-top-left-radius: 10px;
+}
+
+#nav-listing > :last-child{
+  border-bottom-left-radius: 10px;
+}
+
 #nav-listing li{
   padding: 15px 8px 8px 70px;
+  transition: 0.2s;
 }
 
 #nav-listing{
@@ -34,16 +44,16 @@ a {
   line-height: 1.8em;
   text-align: right;
   transition: 0.5s;
-  background-color: gray;
-  font-weight: bold;
-  font-size: 25px;
-  border-radius: 10px;
+  background-color: #bf392b;
+  font: 25px bold Tahoma, sans-serif;
+  border-radius: 10px 0 0 10px;
 }
 
 #nav-menu-icon.active {
   height: 50px;
   right: 150px;
-  padding: 10px 0px;
+  padding: 16px 20px 4px 0px;
+  background: none;
   border: none;
   cursor: pointer;
   z-index: 30;
@@ -51,37 +61,44 @@ a {
 
 #nav-menu-icon{
   height: 50px;
-  transition: .6s;
-  
+  transition: .5s;
+  right: 0;
   position: absolute;
-  right: 20px;
-  padding: 10px 0px;
+  background-color: #bf392b;
+  border-radius: 20px;
+  padding: 16px 35px 4px 20px;
   border: none;
   cursor: pointer;
 }
 .bar {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #111;
   margin: 6px 0;
+	border-radius: 20px;
   transition: 0.4s;
 }
 .active #bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: translate(0px, 11px) rotate(-45deg);
+  transform: translate(0px, 11px) rotate(-45deg);
 }
 
-.active #bar2 {opacity: 0;}
+.active #bar2 {
+  -webkit-transform: rotateY(90deg);
+  -webkit-animation-delay: 1s;
+  transform: rotateY(90deg);
+  animation-delay: 1s;
+}
 
 .active #bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: translate(0px, -11px) rotate(45deg);
+  transform: translate(0px, -11px) rotate(45deg);
 }
 
 #header-image{
   height: inherit;
   width: 124.438px ;
-  transition: 0.3s;
+  transition: 0.1s;
   opacity: 1;
   position: absolute;
   left: 50%;
@@ -98,4 +115,6 @@ a {
 header{
   background-color: #f28424;
   height: 70px;
+  width: 100vw;
+  position: fixed;
 }

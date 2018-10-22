@@ -1,11 +1,11 @@
 function displayNextImage() {
     x = (x === images.length - 1) ? 0 : x + 1;
-    document.getElementById("homepage-images").src = images[x];
+    document.getElementById("homepage-images-0").src = images[x];
 }
 
 function displayPreviousImage() {
     x = (x <= 0) ? images.length - 1 : x - 1;
-    document.getElementById("homepage-images").src = images[x];
+    document.getElementById("homepage-images-0").src = images[x];
 }
 
 function startTimer() {
