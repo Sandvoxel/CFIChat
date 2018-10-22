@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  script(src="javascripts/homepage/sidebar.js")
+  script(src="javascripts/homepage/image-change.js")
+  header
+    img#header-image(src="images/CFIChat-Logo.png", alt="")
+    div#nav-menu-icon(onClick="OpenCloseSidebar()")
+      div.bar#bar1
+      div.bar#bar2
+      div.bar#bar3
+    nav
+      ul#nav-listing
+        li Bookings
+        li Programs
+        li CFIs
+        li About
+    
+  div(onload="startTimer()")
+    img(src="images/homepage-image.png", alt="").homepage-images#homepage-images-0
+    img(src="images/homepage-image.png", alt="").homepage-images#homepage-images-1
