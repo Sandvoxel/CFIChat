@@ -20,9 +20,6 @@ a {
   background-color: #ff9685;
 }
 
-#nav-listing > :first-child{
-  border-top-left-radius: 10px;
-}
 
 #nav-listing > :last-child{
   border-bottom-left-radius: 10px;
@@ -44,19 +41,16 @@ a {
   line-height: 1.8em;
   text-align: right;
   transition: 0.5s;
-  background-color: #bf392b;
+  background-color: none;
   font: 25px bold Tahoma, sans-serif;
   border-radius: 10px 0 0 10px;
 }
 
 #nav-menu-icon.active {
   height: 50px;
-  right: 150px;
-  padding: 16px 20px 4px 0px;
-  background: none;
+  padding: 136px 100.8045px 21px 100.8045px;
   border: none;
   cursor: pointer;
-  z-index: 30;
 }
 
 #nav-menu-icon{
@@ -65,17 +59,42 @@ a {
   right: 0;
   position: absolute;
   background-color: #bf392b;
-  border-radius: 20px;
-  padding: 16px 35px 4px 20px;
+  border-bottom-left-radius: 10px;
+  padding: 16px 35px 4px 35px;
   border: none;
   cursor: pointer;
 }
+
+#navbar-button.active{
+  height: 50px;
+  right: 130px;
+  transition: .5s;
+  padding: 16px 20px 4px 0px;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+}
+#navbar-button{
+  height: 50px;
+  top: 0px;
+  right: 0px;
+  transition: .5s;
+  padding: 16px 20px 4px 0px;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+}
+
 .bar {
   width: 35px;
   height: 5px;
   background-color: #111;
   margin: 6px 0;
-	border-radius: 20px;
+  border-radius: 20px;
   transition: 0.4s;
 }
 .active #bar1 {
