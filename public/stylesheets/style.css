@@ -11,15 +11,17 @@ a {
 
 .homepage-images {
   width: 100%;
-  transition: .5s;
-}
+  transition: 1s;
+  position: absolute;
+  top: 70px;
+  left: 0;
 
+}
 
 
 #nav-listing li:hover{
   background-color: #ff9685;
 }
-
 
 #nav-listing > :last-child{
   border-bottom-left-radius: 10px;
@@ -46,14 +48,14 @@ a {
   border-radius: 10px 0 0 10px;
 }
 
-#nav-menu-icon.active {
+#nav-background.active {
   height: 50px;
   padding: 136px 100.8045px 21px 100.8045px;
   border: none;
   cursor: pointer;
 }
 
-#nav-menu-icon{
+#nav-background{
   height: 50px;
   transition: .5s;
   right: 0;
@@ -66,27 +68,23 @@ a {
 }
 
 #navbar-button.active{
-  height: 50px;
   right: 130px;
   transition: .5s;
-  padding: 16px 20px 4px 0px;
+  padding: 16px 20px;
   position: absolute;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 30;
 }
 #navbar-button{
-  height: 50px;
   top: 0px;
   right: 0px;
   transition: .5s;
-  padding: 16px 20px 4px 0px;
+  padding: 16px 20px;
   position: absolute;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 30;
 }
 
 .bar {
@@ -135,5 +133,6 @@ header{
   background-color: #f28424;
   height: 70px;
   width: 100vw;
+  z-index: 100;
   position: fixed;
 }

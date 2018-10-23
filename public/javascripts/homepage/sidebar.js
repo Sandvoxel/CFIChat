@@ -1,6 +1,6 @@
 function OpenCloseSidebar(){
     document.getElementById("navbar-button").classList.toggle("active");
-    document.getElementById("nav-menu-icon").classList.toggle("active");
+    document.getElementById("nav-background").classList.toggle("active");
 
 
     SidebarUpdate(document.getElementById("navbar-button").classList.contains("active"));
