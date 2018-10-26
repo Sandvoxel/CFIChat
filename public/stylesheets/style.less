@@ -99,23 +99,24 @@ a {
   margin: 6px 0;
   border-radius: 20px;
   transition: 0.4s;
-    .active #bar1 {
-      -webkit-transform: translate(0px, 11px) rotate(-45deg);
-      transform: translate(0px, 11px) rotate(-45deg);
-    }
-    
-    .active #bar2 {
-      -webkit-transform: rotateY(90deg);
-      -webkit-animation-delay: 1s;
-      transform: rotateY(90deg);
-      animation-delay: 1s;
-    }
-    
-    .active #bar3 {
-      -webkit-transform: translate(0px, -11px) rotate(45deg);
-      transform: translate(0px, -11px) rotate(45deg);
-    }
+
 }
+.active{
+  #bar1 {
+    -webkit-transform: translate(0px, 11px) rotate(-45deg);
+     transform: translate(0px, 11px) rotate(-45deg);
+  }
+  #bar2 {
+    -webkit-transform: rotateY(90deg);
+    -webkit-animation-delay: 1s;
+    transform: rotateY(90deg);
+    animation-delay: 1s;
+  }
+  #bar3 {
+    -webkit-transform: translate(0px, -11px) rotate(45deg);
+    transform: translate(0px, -11px) rotate(45deg);  
+  }
+} 
 
 #header-image{
   height: inherit;
